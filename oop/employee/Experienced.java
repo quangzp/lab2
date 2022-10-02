@@ -1,33 +1,37 @@
 package com.lab1.oop.employee;
 
 public class Experienced extends Employee {
-	private int expInYear;
-	private String proSkill;
-	
-	public Experienced(int id, String fullName, String birthDay, String phone, String email, int employeeType) {
-		super(id, fullName, birthDay, phone, email, employeeType);
-	}
+    private int expInYear;
+    private String proSkill;
 
-	public int getExpInYear() {
-		return expInYear;
-	}
+    public Experienced() {
+        super();
+    }
 
-	public void setExpInYear(int expInYear) {
-		this.expInYear = expInYear;
-	}
+    public Experienced(int id, String fullName, String birthDay, String phone, String email, int employeeType) {
+        super(id, fullName, birthDay, phone, email, employeeType);
+    }
 
-	public String getProSkill() {
-		return proSkill;
-	}
+    public int getExpInYear() {
+        return expInYear;
+    }
 
-	public void setProSkill(String proSkill) {
-		this.proSkill = proSkill;
-	}
+    public void setExpInYear(int expInYear) {
+        this.expInYear = expInYear;
+    }
 
-	@Override
-	public void showInfo() {
-		System.out
-				.println(super.toString() + String.format(", Experience years:%d, Pro skill:%s", expInYear, proSkill));
-	}
+    public String getProSkill() {
+        return proSkill;
+    }
+
+    public void setProSkill(String proSkill) {
+        this.proSkill = proSkill;
+    }
+
+    @Override
+    public void showInfo() {
+        System.out
+                .println(super.toString() + String.format(", Experience years:%d, Pro skill:%s", expInYear, proSkill));
+    }
 
 }

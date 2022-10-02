@@ -13,7 +13,8 @@ public abstract class Employee {
 	// static variables of class
 	private static int employeeCount = 0;
 	private static List<Employee> list = new LinkedList<>();
-	
+
+	protected Employee(){}
 	protected Employee(int id, String fullName, String birthDay, String phone, String email,int employeeType) {
 		this.id = id;
 		this.fullName = fullName;
@@ -21,8 +22,6 @@ public abstract class Employee {
 		this.phone = phone;
 		this.email = email;
 		this.employeeType = employeeType;
-		employeeCount++;
-		list.add(this);
 	}
 
 	public int getId() {
